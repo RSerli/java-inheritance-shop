@@ -41,26 +41,6 @@ public class ProdottoGenerale {
     }
 
     /*
-     * GETTERS
-     */
-
-    public String getNome() {
-        return this.Nome;
-    }
-    
-    public String getMarca() {
-        return this.Marca;
-    }
-
-    public Float getPrezzo() {
-        return this.Prezzo;
-    }
-
-    public int getIva() {
-        return this.Iva;
-    }
-
-    /*
      * SETTERS e CUSTOM SETTERS
      */
 

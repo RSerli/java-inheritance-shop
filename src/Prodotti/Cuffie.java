@@ -6,9 +6,9 @@ public class Cuffie extends ProdottoGenerale{
     /*
      * ATTRIBUTI
      */
-    protected String Colore;
+    private String Colore;
 
-    protected String TipoConnessione;
+    private String TipoConnessione;
 
     /*
      * COSTRUTTORE
@@ -23,15 +23,6 @@ public class Cuffie extends ProdottoGenerale{
     /*
      * MODULI
      */
-
-    public void showProdotto(){
-        System.out.println("Info Prodotto");
-        System.out.println("Nome: " + this.Nome);
-        System.out.println("Marca: " + this.Marca);
-        System.out.println("Prezzo: " + this.Prezzo);
-        System.out.println("Colore: " + this.Colore);
-        System.out.println("Connessione: " + this.TipoConnessione);
-    }
 
     
 }

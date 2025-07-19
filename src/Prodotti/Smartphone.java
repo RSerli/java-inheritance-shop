@@ -7,9 +7,9 @@ public class Smartphone extends ProdottoGenerale{
      * ATTRIBUTI
      */
 
-    protected String CodiceIMEI;
+    private String CodiceIMEI;
 
-    protected int DimensioneMemoria;
+    private int DimensioneMemoria;
 
     /*
      * COSTRUTTORE
@@ -24,14 +24,5 @@ public class Smartphone extends ProdottoGenerale{
     /*
      * MODULI
      */
-
-    public void showProdotto(){
-        System.out.println("Info Prodotto");
-        System.out.println("Nome: " + this.Nome);
-        System.out.println("Marca: " + this.Marca);
-        System.out.println("Prezzo: " + this.Prezzo);
-        System.out.println("CodiceIMEI: " + this.CodiceIMEI);
-        System.out.println("Memoria: " + this.DimensioneMemoria);
-    }
 
 }
