@@ -15,8 +15,8 @@ public class Smartphone extends ProdottoGenerale{
      * COSTRUTTORE
      */
 
-    public Smartphone(String nome, String marca, Float prezzo, int iva, String codiceIMEI, int dimensioneMemoria) {
-        super(nome, marca, prezzo, iva);
+    public Smartphone(String nome, String marca, Float prezzo, String codiceIMEI, int dimensioneMemoria) {
+        super(nome, marca, prezzo);
         this.CodiceIMEI = codiceIMEI;
         this.DimensioneMemoria = dimensioneMemoria;
     }
@@ -24,5 +24,9 @@ public class Smartphone extends ProdottoGenerale{
     /*
      * MODULI
      */
-
+    
+    @Override
+    public String toString(){
+        return ("PREZZO: "+ this.Prezzo + " SMARTPHONE:" + this.Nome + " MARCA: " + this.Marca );
+    }
 }

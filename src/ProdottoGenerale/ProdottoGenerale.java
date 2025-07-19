@@ -24,12 +24,12 @@ public class ProdottoGenerale {
 
     Random rand = new Random();
 
-    public ProdottoGenerale(String nome, String marca, Float prezzo, int iva) {
+    public ProdottoGenerale(String nome, String marca, Float prezzo) {
         this.Codice = rand.nextInt(10000);
         this.Nome = nome;
         this.Marca = marca;
         this.Prezzo = prezzo;
-        this.Iva = iva;
+        this.Iva = 20;
     }
 
     /*
@@ -38,6 +38,14 @@ public class ProdottoGenerale {
 
     public String getCodiceNomeProdotto() {
         return (this.Codice + "-" + this.Nome);
+    }
+
+    /*
+     * GETTERS
+     */
+
+    public int getCodice() {
+        return Codice;
     }
 
     /*

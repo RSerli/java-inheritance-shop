@@ -15,8 +15,8 @@ public class Televisori extends ProdottoGenerale{
     * COSTRUTTORE
     */
 
-    public Televisori(String nome, String marca, Float prezzo, int iva, int dimenesioni, Boolean isSmart) {
-       super(nome, marca, prezzo, iva);
+    public Televisori(String nome, String marca, Float prezzo, int dimenesioni, Boolean isSmart) {
+       super(nome, marca, prezzo);
        this.Dimensioni = dimenesioni;
        this.isSmart = isSmart;
     }
@@ -25,6 +25,9 @@ public class Televisori extends ProdottoGenerale{
      * MODULI
      */
 
-
+    @Override
+    public String toString(){
+      return ("PREZZO: "+ this.Prezzo + " TELEVISORE:" + this.Nome + " MARCA: " + this.Marca );
+    }
      
 }
