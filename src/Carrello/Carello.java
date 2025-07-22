@@ -113,6 +113,7 @@ public class Carello {
                 System.out.println("    - 2 - Smartphone");
                 System.out.println("    - 3 - Cuffie");
                 sceltaProdotto = scan.nextInt();
+                scan.nextLine(); // rimozione del buffer o newline
                 switch (sceltaProdotto) {
                     case 1:
                         InCarrelloTelevisore();
@@ -132,7 +133,6 @@ public class Carello {
                 }
             } while (validAnswer == false);
 
-            scan.nextLine(); // rimozione del buffer o newline
 
             //Controllo se l'user vuole comprare qualcos'altro
             do { 
