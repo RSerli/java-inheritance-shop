@@ -132,6 +132,7 @@ public class Carello {
                 }
             } while (validAnswer == false);
 
+            scan.nextLine(); // rimozione del buffer o newline
 
             //Controllo se l'user vuole comprare qualcos'altro
             do { 
